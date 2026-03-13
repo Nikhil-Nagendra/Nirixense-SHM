@@ -1,0 +1,12 @@
+[tool.pyre]
+source_directories = ["backend"]
+search_path = ["backend/venv/Lib/site-packages"]
+
+[tool.pyright]
+typeCheckingMode = "basic"
+extraPaths = ["backend"]
+executionEnvironments = [
+  { root = "backend" }
+]
+venvPath = "backend"
+venv = "venv"
