@@ -21,19 +21,6 @@ def get_node_analytics(node_id: int, tier: str = "basic", db: Session = Depends(
     }
     
     if tier.lower() in ["pro", "premium"]:
-<<<<<<< HEAD
-        base_data["advanced_metrics"] = {
-            "vibration_rms": 0.45,
-            "peak_acceleration": 2.1,
-            "temperature_drift": 0.05,
-            "estimated_life_days": 845
-        }
-        base_data["historical_trend"] = [
-            {"day": -3, "avg": 0.41},
-            {"day": -2, "avg": 0.43},
-            {"day": -1, "avg": 0.44},
-            {"day": 0, "avg": 0.45},
-=======
         import random as _rnd
         rng = _rnd.Random(node_id * 31337)  # deterministic per node
         vrms   = round(rng.uniform(0.10, 1.20), 2)
@@ -52,7 +39,6 @@ def get_node_analytics(node_id: int, tier: str = "basic", db: Session = Depends(
             {"day": -2, "avg": round(base_trend + rng.uniform(-0.05, 0.05), 3)},
             {"day": -1, "avg": round(base_trend + rng.uniform(-0.05, 0.05), 3)},
             {"day":  0, "avg": round(vrms, 3)},
->>>>>>> bc8a547 (latest changes)
         ]
         
     return base_data

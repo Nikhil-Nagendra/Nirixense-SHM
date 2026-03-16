@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-:root {
-  --bg-dark: #0d0d0d;
-  --bg-card: rgba(26, 26, 26, 0.7);
-  --brand-red: #DC2626;
-  --text-primary: #ffffff;
-  --text-secondary: #a3a3a3;
-  --status-green: #10B981;
-  --status-blue: #3B82F6;
-  --status-gray: #6B7280;
-  --status-amber: #F59E0B;
-=======
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
@@ -48,46 +36,21 @@
   --status-sleep-dim: var(--brand-yellow-dim);
   --status-unconfigured: var(--text-muted);
   --status-unconfigured-dim: rgba(255, 255, 255, 0.05);
->>>>>>> bc8a547 (latest changes)
 }
 
 body {
   margin: 0;
-<<<<<<< HEAD
-  font-family: 'Inter', sans-serif;
-  background-color: var(--bg-dark);
-  color: var(--text-primary);
-  -webkit-font-smoothing: antialiased;
-=======
   font-family: 'Outfit', sans-serif;
   background-color: var(--bg-dark);
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
->>>>>>> bc8a547 (latest changes)
 }
 
 * {
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-.glass-panel {
-  background: var(--bg-card);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-}
-
-.brand-text {
-  color: var(--brand-red);
-}
-
-.app-container {
-  min-height: 100vh;
-  padding: 2rem;
-=======
 /* Base Glassmorphism Class */
 .glass-panel {
   background: var(--bg-card);
@@ -121,5 +84,4 @@ body {
   height: 8px;
   border-radius: 50%;
   animation: pulse 2s infinite ease-in-out;
->>>>>>> bc8a547 (latest changes)
 }

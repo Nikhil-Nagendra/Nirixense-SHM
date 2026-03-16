@@ -1,24 +1,5 @@
 .charts-container {
   display: grid;
-<<<<<<< HEAD
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.chart-box {
-  padding: 1.5rem;
-}
-
-.chart-box h3 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-}
-
-.chart-wrapper {
-  height: 250px;
-=======
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 24px;
   margin-top: 8px;
@@ -106,5 +87,4 @@
   font-size: 1.1rem;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
->>>>>>> bc8a547 (latest changes)
 }

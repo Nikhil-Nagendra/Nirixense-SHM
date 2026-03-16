@@ -30,8 +30,6 @@ graph TD
 3. React Frontend: `http://localhost:5173`
 
 *(Note: Requires ports 8000, 5173, 5432, 6379 to be available)*
-<<<<<<< HEAD
-=======
 
 ## Current App Structure (since last push)
 
@@ -94,4 +92,3 @@ graph TD
 
 This README reflects the current layout and major features after the latest round of backend, frontend, and UX additions (new dashboard pages, WebSocket‑driven live status, and the updated sidebar with the Nikhil account section).
 
->>>>>>> bc8a547 (latest changes)

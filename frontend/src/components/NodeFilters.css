@@ -1,38 +1,4 @@
 .filters-panel {
-<<<<<<< HEAD
-  padding: 1rem 1.5rem;
-  margin-bottom: 2rem;
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.filter-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.filter-group label {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.filter-group select {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  min-width: 150px;
-  outline: none;
-  font-family: inherit;
-  transition: all 0.2s;
-=======
   padding: 16px 24px;
   display: flex;
   justify-content: space-between;
@@ -84,22 +50,14 @@
 .filter-group select:hover {
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
->>>>>>> bc8a547 (latest changes)
 }
 
 .filter-group select:focus {
   border-color: var(--brand-red);
-<<<<<<< HEAD
-}
-
-.filter-group select option {
-  background-color: var(--bg-dark);
-=======
   box-shadow: 0 0 0 2px var(--brand-red-dim);
 }
 
 .filter-group select option {
   background-color: var(--bg-card);
   color: var(--text-primary);
->>>>>>> bc8a547 (latest changes)
 }

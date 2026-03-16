@@ -1,45 +1,3 @@
-<<<<<<< HEAD
-.dashboard-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-.dashboard-header h1 {
-  margin: 0;
-}
-
-.connection-status {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-}
-
-.indicator {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
-
-.indicator.online {
-  background-color: var(--status-green);
-  box-shadow: 0 0 8px var(--status-green);
-}
-
-.indicator.offline {
-  background-color: var(--brand-red);
-}
-
-.node-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-=======
 .dashboard-page {
   display: flex;
   flex-direction: column;
@@ -86,5 +44,4 @@
   .zone-map-wrapper {
     height: 320px;
   }
->>>>>>> bc8a547 (latest changes)
 }

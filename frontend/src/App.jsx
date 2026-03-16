@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-import Dashboard from './components/Dashboard'
-
-function App() {
-  return (
-    <div className="app-container">
-      <Dashboard />
-    </div>
-  )
-}
-
-export default App
-=======
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import DashboardLayout from './layout/DashboardLayout';
@@ -41,4 +27,3 @@ function App() {
 }
 
 export default App;
->>>>>>> bc8a547 (latest changes)
