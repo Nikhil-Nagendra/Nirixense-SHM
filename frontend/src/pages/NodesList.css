@@ -1,0 +1,82 @@
+.nodes-list-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Toolbar: filters left, button right */
+.nodes-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Let the filters panel grow and the button stay fixed */
+.nodes-toolbar > .glass-panel {
+  flex: 1;
+}
+
+.premium-btn {
+  background-color: var(--brand-red);
+  color: #fff;
+  border: none;
+  padding: 0 14px;
+  border-radius: 8px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 0.78rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  height: 36px;
+}
+
+.premium-btn:hover {
+  background-color: var(--brand-crimson);
+  transform: translateY(-1px);
+}
+
+/* Node card grid — same as dashboard */
+.node-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 14px;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px;
+  color: var(--text-muted);
+  border: 1px dashed var(--border-subtle);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.01);
+}
+
+/* Keep these for any leftover references */
+.table-subtext {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.icon-btn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+
+.delete-btn:hover {
+  color: var(--brand-crimson);
+  background-color: var(--brand-crimson-dim);
+}

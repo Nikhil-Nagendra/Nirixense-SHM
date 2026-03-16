@@ -1,0 +1,88 @@
+.stat-card {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px color-mix(in srgb, var(--card-color) 25%, transparent),
+              0 0 0 1px color-mix(in srgb, var(--card-color) 40%, transparent);
+}
+
+.stat-card-top-bar {
+  height: 3px;
+  background: linear-gradient(90deg, var(--card-color), color-mix(in srgb, var(--card-color) 40%, transparent));
+  width: 100%;
+}
+
+.stat-card-body {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px 14px;
+}
+
+.stat-icon-wrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--card-color);
+  background: color-mix(in srgb, var(--card-color) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--card-color) 25%, transparent);
+  flex-shrink: 0;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 3px;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.stat-subtitle {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
+.stat-trend {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+.stat-trend.up {
+  color: var(--brand-emerald);
+  background: color-mix(in srgb, var(--brand-emerald) 12%, transparent);
+}
+
+.stat-trend.down {
+  color: var(--brand-crimson);
+  background: color-mix(in srgb, var(--brand-crimson) 12%, transparent);
+}

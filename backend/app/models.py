@@ -60,6 +60,11 @@ class Node(Base):
     
     id = Column(Integer, primary_key=True, index=True)
     zone_id = Column(Integer, ForeignKey("zones.id"), nullable=False)
+<<<<<<< HEAD
+=======
+    serial_number = Column(String, unique=True, index=True, nullable=True)
+    name = Column(String, nullable=True)
+>>>>>>> bc8a547 (latest changes)
     battery_level = Column(Float, default=100.0)
     signal_strength = Column(Float, default=0.0)
     status = Column(SAEnum(NodeStatus), default=NodeStatus.NOT_CONFIGURED, index=True)

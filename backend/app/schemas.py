@@ -58,12 +58,22 @@ class ZoneResponse(ZoneBase):
 
 class NodeBase(BaseModel):
     zone_id: int
+<<<<<<< HEAD
+=======
+    serial_number: Optional[str] = None
+    name: Optional[str] = None
+>>>>>>> bc8a547 (latest changes)
 
 class NodeCreate(NodeBase):
     pass
 
 class NodeResponse(NodeBase):
     id: int
+<<<<<<< HEAD
+=======
+    serial_number: Optional[str] = None
+    name: Optional[str] = None
+>>>>>>> bc8a547 (latest changes)
     battery_level: float
     signal_strength: float
     status: NodeStatus

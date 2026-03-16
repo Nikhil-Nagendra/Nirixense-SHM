@@ -1,4 +1,5 @@
 .filters-panel {
+<<<<<<< HEAD
   padding: 1rem 1.5rem;
   margin-bottom: 2rem;
   display: flex;
@@ -31,12 +32,74 @@
   outline: none;
   font-family: inherit;
   transition: all 0.2s;
+=======
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.filters-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-icon {
+  color: var(--brand-red);
+}
+
+.filters-controls {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.filter-group select {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  padding: 8px 16px;
+  border-radius: 8px;
+  min-width: 160px;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+}
+
+.filter-group select:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+>>>>>>> bc8a547 (latest changes)
 }
 
 .filter-group select:focus {
   border-color: var(--brand-red);
+<<<<<<< HEAD
 }
 
 .filter-group select option {
   background-color: var(--bg-dark);
+=======
+  box-shadow: 0 0 0 2px var(--brand-red-dim);
+}
+
+.filter-group select option {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+>>>>>>> bc8a547 (latest changes)
 }

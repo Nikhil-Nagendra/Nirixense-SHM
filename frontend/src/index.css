@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --bg-dark: #0d0d0d;
   --bg-card: rgba(26, 26, 26, 0.7);
@@ -8,20 +9,69 @@
   --status-blue: #3B82F6;
   --status-gray: #6B7280;
   --status-amber: #F59E0B;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Core Backgrounds (Black/Dark Grey) */
+  --bg-dark: #000000;
+  --bg-card: #0A0A0A;
+  --bg-card-hover: #141414;
+  
+  /* Brand Accents (Nirixense Red & Black) */
+  --brand-red: #E63946;
+  --brand-red-dim: rgba(230, 57, 70, 0.15);
+  --brand-emerald: #2A9D8F;
+  --brand-emerald-dim: rgba(42, 157, 143, 0.15);
+  --brand-crimson: #D90429;
+  --brand-crimson-dim: rgba(217, 4, 41, 0.15);
+  --brand-yellow: #E9C46A;
+  --brand-yellow-dim: rgba(233, 196, 106, 0.15);
+  --brand-purple: #8338EC;
+  --brand-purple-dim: rgba(131, 56, 236, 0.15);
+  
+  /* Typography Colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #CCCCCC;
+  --text-muted: #888888;
+  
+  /* UI Borders */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-active: rgba(230, 57, 70, 0.5);
+  
+  /* Status Colors (Overrides) */
+  --status-monitor: var(--brand-emerald);
+  --status-monitor-dim: var(--brand-emerald-dim);
+  --status-configured: var(--brand-purple);
+  --status-configured-dim: var(--brand-purple-dim);
+  --status-sleep: var(--brand-yellow);
+  --status-sleep-dim: var(--brand-yellow-dim);
+  --status-unconfigured: var(--text-muted);
+  --status-unconfigured-dim: rgba(255, 255, 255, 0.05);
+>>>>>>> bc8a547 (latest changes)
 }
 
 body {
   margin: 0;
+<<<<<<< HEAD
   font-family: 'Inter', sans-serif;
   background-color: var(--bg-dark);
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
+=======
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+>>>>>>> bc8a547 (latest changes)
 }
 
 * {
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 .glass-panel {
   background: var(--bg-card);
   backdrop-filter: blur(10px);
@@ -37,4 +87,39 @@ body {
 .app-container {
   min-height: 100vh;
   padding: 2rem;
+=======
+/* Base Glassmorphism Class */
+.glass-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+/* Active Glow effects */
+.glow-red {
+  box-shadow: 0 0 15px var(--brand-red-dim);
+  border-color: var(--border-active);
+}
+
+/* Pulse animation for live data */
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.pulse-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: pulse 2s infinite ease-in-out;
+>>>>>>> bc8a547 (latest changes)
 }

@@ -1,0 +1,105 @@
+.zone-map-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.zone-map-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-subtle);
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.zone-legend {
+  display: flex;
+  gap: 14px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.zone-map-body {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+}
+
+.zone-label {
+  position: absolute;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.12);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.zone-label.zone-a { top: 14px; left: 24px; }
+.zone-label.zone-b { top: 14px; right: 24px; }
+
+.zone-tooltip {
+  background: var(--surface-elevated, #1a1a2e);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.78rem;
+  min-width: 140px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.zt-name {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  font-size: 0.82rem;
+}
+
+.zt-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.zt-row span:last-child {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.zt-sev {
+  margin-top: 6px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.sev-critical { background: color-mix(in srgb, #ef4444 20%, transparent); color: #ef4444; }
+.sev-warning  { background: color-mix(in srgb, #eab308 20%, transparent); color: #eab308; }
+.sev-healthy  { background: color-mix(in srgb, #10b981 20%, transparent); color: #10b981; }
