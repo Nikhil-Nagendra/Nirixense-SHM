@@ -11,31 +11,33 @@ Full-stack Structural Health Monitoring platform with real-time updates and anal
 
 ### Node Details & Deep Insights
 <p align="center">
-  <img src="screenshots/nodes.png" width="48%" alt="Nodes View"> <img src="screenshots/node drawer.png" width="48%" alt="Node Drawer">
+  <img src="screenshots/nodes.png" width="47%" alt="Nodes View"> &nbsp;&nbsp;&nbsp;&nbsp; <img src="screenshots/node drawer.png" width="47%" alt="Node Drawer">
 </p>
+
+
 
 
 ### Analytics
 <p align="center">
-  <img src="screenshots/analytics.png" width="48%" alt="Analytics View"> <img src="screenshots/node trends.png" width="48%" alt="Node Trends">
+  <img src="screenshots/analytics.png" width="47%" alt="Analytics View"> &nbsp;&nbsp;&nbsp;&nbsp; <img src="screenshots/node trends.png" width="47%" alt="Node Trends">
 </p>
+
+
 
 
 ### Alerts
 <p align="center">
-  <img src="screenshots/alert - diagnostics.png" width="48%" alt="Alert Diagnostics"> <img src="screenshots/alert - actions.png" width="48%" alt="Alert Actions">
+  <img src="screenshots/alert - diagnostics.png" width="47%" alt="Alert Diagnostics"> &nbsp;&nbsp;&nbsp;&nbsp; <img src="screenshots/alert - actions.png" width="47%" alt="Alert Actions">
 </p>
 
 
+
+
+### Clients & Settings
 <p align="center">
-  <h3>Clients</h3>
-  <img src="screenshots/clients.png" width="48%" alt="Clients View">
+  <img src="screenshots/clients.png" width="47%" alt="Clients View"> &nbsp;&nbsp;&nbsp;&nbsp; <img src="screenshots/settings.png" width="47%" alt="Settings View">
 </p>
 
-<p align="center">
-  <h3>Settings</h3>
-  <img src="screenshots/settings.png" width="48%" alt="Settings View">
-</p>
 
 <!-- <p align="center">
   <h3>Sidebar</h3>
