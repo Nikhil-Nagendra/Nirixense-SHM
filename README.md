@@ -2,6 +2,46 @@
 
 Full-stack Structural Health Monitoring platform with real-time updates and analytics.
 
+## Screenshots
+
+<p align="center">
+  <h3>Control Tower</h3>
+  <img src="screenshots/control tower.png" width="100%" alt="Control Tower Dashboard">
+</p>
+
+<p align="center">
+  <h3>Node Details & Deep Insights</h3>
+  <img src="screenshots/nodes.png" width="48%" alt="Nodes View">
+  <img src="screenshots/node drawer.png" width="100%" alt="Node Drawer">
+</p>
+
+<p align="center">
+  <h3>Analytics</h3>
+  <img src="screenshots/analytics.png" width="48%" alt="Analytics View">
+  <img src="screenshots/node trends.png" width="48%" alt="Node Trends">
+</p>
+
+<p align="center">
+  <h3>Alerts</h3>
+  <img src="screenshots/alert - diagnostics.png" width="48%" alt="Alert Diagnostics">
+  <img src="screenshots/alert - actions.png" width="48%" alt="Alert Actions">
+</p>
+
+<p align="center">
+  <h3>Clients</h3>
+  <img src="screenshots/clients.png" width="48%" alt="Clients View">
+</p>
+
+<p align="center">
+  <h3>Settings</h3>
+  <img src="screenshots/settings.png" width="48%" alt="Settings View">
+</p>
+
+<p align="center">
+  <h3>Sidebar</h3>
+  <img src="screenshots/sidebar.png" width="48%" alt="Sidebar View">
+</p>
+
 ## Tech Stack
 - **Backend:** FastAPI, Python, SQLAlchemy, PostgreSQL, Redis (Pub/Sub + Caching), Alembic
 - **Frontend:** React, Vite, Recharts, Lucide-react
