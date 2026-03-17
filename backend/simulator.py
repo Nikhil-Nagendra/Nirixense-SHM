@@ -178,9 +178,22 @@ print(f"Tracking {len(node_states)} nodes: {list(node_states.keys())}")
 while True:
     tick += 1
     
+    # Refresh states from API to avoid overwriting manual changes
+    try:
+        resp = requests.get(f"{BASE_URL}/nodes/?limit=100")
+        current_node_data = {n["id"]: n for n in resp.json()}
+        for node_id, n in current_node_data.items():
+            if node_id in node_states:
+                node_states[node_id]['bat'] = n["battery_level"]
+                node_states[node_id]['active'] = n["status"] != "NOT_CONFIGURED"
+                # Signal can still be simulated from previous value or updated if desired
+    except Exception:
+        pass
+
     for node_id, state in node_states.items():
         if state['active']:
-            state['bat'] = max(0, min(100, state['bat'] - random.uniform(0.0, 0.2)))
+            # Gradually decrease battery from whatever its current value is
+            state['bat'] = max(0, min(100, state['bat'] - random.uniform(0.0, 0.1)))
             
             state['sig'] = state['sig'] + (math.sin(tick * 0.2 + node_id) * 2) + random.uniform(-1, 1)
             state['sig'] = max(-100, min(-30, state['sig']))
@@ -191,3 +204,4 @@ while True:
                 pass
                 
     time.sleep(1)
+
